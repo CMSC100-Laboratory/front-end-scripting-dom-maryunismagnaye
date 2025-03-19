@@ -1,27 +1,184 @@
-/* columns with different sizes */
+/* fix full layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Center everything */
+body, html {
+  overflow: auto; 
+  width: 100%;
+  background-color: #f9f9f9; 
+}
+
+/* Main container */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  overflow: auto; 
+  width: 100%;
+}
+
+/* 3 columns with different sizes */
 .column1 {
-    float: left;
-    width: 15%;
+    width: 20%;
     padding: 10px;
-    height: 100%;
-    background-color: rgb(212, 212, 212);
+    height: 100vh;
+    overflow: auto; 
+    background-color: #f9f9f9;
+  }
+
+  .column1 h2 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+  .fav {
+      background-color: white !important;
   }
 
   .column2 {
-    float: center;
-    width: 70%;
+    width: 60%;
     padding: 10px;
-    height: 100%;
+    height: 100vh;
+    overflow: auto; 
     background-color: rgb(255, 255, 255);
   }
+  .column2 h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
 
   .column3 {
-    float: right;
-    width: 15%;
+    width: 20%;
     padding: 10px;
-    height: 100%;
-    background-color: rgb(212, 212, 212);
+    height: 100vh;
+    overflow: auto; 
+    background-color: #f9f9f9;
   }
+
+  .column3 h1 {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+
+  }
+  .column3 p {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+.row {
+  display: flex;
+  flex-grow: 1; 
+  height: 100%;
+}
 
 
 /* forms style*/
+.form-container {
+  width: 100%; 
+  display: flex;
+  justify-content: center; 
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+form {
+  width: 80%; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-row {
+  display: flex;
+  justify-content: space-between; 
+  gap: 15px;
+}
+
+.input-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-weight: bold;
+}
+
+.input-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007add;
+  color: white;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  align-self: center;
+}
+
+/* song list style*/
+.songs-container {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: grid;
+  /* https://www.w3schools.com/cssref/playdemo.php?filename=playcss_grid-template-columns&preval=repeat(2,%2060px%201fr) */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  text-align: center;
+}
+
+/* Each submiited song */
+.song-card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  border: 1px solid #ddd; 
+}
+
+.song-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+/* Remove button */
+.remove-button {
+  background-color: red;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.remove-button:hover {
+  background-color: rgb(117, 0, 0);
+}

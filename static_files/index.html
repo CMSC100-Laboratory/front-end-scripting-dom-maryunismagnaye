@@ -15,7 +15,7 @@
                     FAVORITE FOODS
                 </h2>
 
-                <h2>
+                <h2 class="fav">
                     FAVORITE SONGS
                 </h2>
 
@@ -25,8 +25,14 @@
             </div>
 
             <div class = "column2">
+                <h1 class = "col2Header"> FAVORITES SONGS </h1>
                 <div class="form-container">
                     <form id="songForm">
+                        <!-- 
+                        https://www.w3schools.com/Tags/att_input_type.asp 
+                        different types for the text fields
+                        -->
+                    <div class="input-row">
                         <div class="input-group">
                             <label for="name">Name:</label>
                             <input type="text" id="name" required>
@@ -39,11 +45,16 @@
                             <label for="imageUrl">Image URL:</label>
                             <input type="url" id="imageUrl" required>
                         </div>
+                    </div>
+
+                    <div class="input-row">
                         <div class="input-group">
                             <label for="rank">Rank:</label>
                             <input type="number" id="rank" required>
                         </div>
+        
                         <button type="submit">Submit</button>
+                    </div>
                     </form>
                 </div>
                 
@@ -52,11 +63,12 @@
 
             <div class = "column3">
                 <h1> ADS </h1>
-                <img src="http://localhost:3000/images/1.jpg" width="200">
+                <img src="http://localhost:3000/images/bini.gif" width="240">
+                <p><a href="https://bini.abs-cbn.com/">BINI</a></p>
+                <img src="http://localhost:3000/images/capybara.gif" width="240">
 
-                <img src="http://localhost:3000/images/2.png" width="200">
-
-                <img src="http://localhost:3000/images/3.jpeg" width="200">
+                <img src="http://localhost:3000/images/blackpink.gif" width="240">
+                <p><a href="https://www.blackpinkmusic.com/">BLACKPINK</a></p>
             </div>
         </div>
     </div>
@@ -65,8 +77,3 @@
     
 </body>
 </html>
-
-<!-- 
-SAMPLE URL
-- https://i.scdn.co/image/ab67616d0000b2732f8c0fd72a80a93f8c53b96c 
--->
