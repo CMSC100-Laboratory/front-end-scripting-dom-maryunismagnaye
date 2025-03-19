@@ -1,0 +1,27 @@
+/* columns with different sizes */
+.column1 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgb(212, 212, 212);
+  }
+
+  .column2 {
+    float: center;
+    width: 70%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .column3 {
+    float: right;
+    width: 15%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgb(212, 212, 212);
+  }
+
+
+/* forms style*/
