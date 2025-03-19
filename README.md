@@ -18,3 +18,6 @@ What I did:
    - Store songs in an array
    - DOM manipulation to create element for each submitted song
    - Remove submitted song
+4. Created GitHub Pages
+   - https://cmsc100-laboratory.github.io/front-end-scripting-dom-maryunismagnaye/
+   - can't open the actual file. its just the README.md file
